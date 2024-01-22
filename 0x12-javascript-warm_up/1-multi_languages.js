@@ -7,4 +7,6 @@ statementOne = 'C is fun';
 statementTwo = 'Python is cool';
 statementThree = 'JavaScript is amazing';
 
-console.log(statementOne, statementTwo, statementThree);
+console.log(statementOne);
+console.log(statementTwo);
+console.log(statementThree);
