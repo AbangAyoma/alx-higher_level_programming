@@ -1,2 +1,2 @@
 #!/usr/bin/python3
-import ditto
+import builtins; builtins.__dict__['p'+'rint']('#pythoniscool', end='\n')
