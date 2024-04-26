@@ -20,30 +20,30 @@ class Rectangle(Base):
 		return self.__width
 	
 	@width.setter
-    def width(self, value):
-        self.__width = value
+    	def width(self, value):
+        	self.__width = value
     
-    @property
+    	@property
 	def height(self):
 		return self.__width
 	
 	@width.setter
-    def height(self, value):
-        self.__width = value
+    	def height(self, value):
+        	self.__width = value
 	
-    @property
-    def x(self):
-        return self.__x
+    	@property
+    	def x(self):
+        	return self.__x
     
-    @x.seter
-    def x(self, value):
-        '''setter for the x attribute'''
-        self.__x = value
+    	@x.seter
+    	def x(self, value):
+        	'''setter for the x attribute'''
+        	self.__x = value
+
+	@property
+    	def y(self):
+        	return self.__y
     
-    @property
-    def y(self):
-        return self.__y
-    
-    @y.seter
-    def y(self, value):
-        self.__y = valueS
+    	@y.seter
+    	def y(self, value):
+        	self.__y = valueS
