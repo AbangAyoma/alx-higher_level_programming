@@ -2,7 +2,7 @@
 
 '''importing a module from models called base with a class of Base'''
 
-from base import Base
+from models.base import Base
 
 """A class called Rectangle that inherits from the Base class"""
 
