@@ -33,6 +33,9 @@ class Rectangle(Base):
 	
 	@width.setter
 	def width(self, value):
+		if type(value) != int:
+			"""validation of all setter methods and instantiation"""
+			raise TypeError("{} of the attribute> must be an integer.".format(str(self.width)))
 		'''a setter method for the width'''
 		self.__width = value
 
@@ -43,6 +46,9 @@ class Rectangle(Base):
 	
 	@height.setter
 	def height(self, value):
+		if type(value) != int:
+			"""validation of all setter methods and instantiation"""
+			raise TypeError("{} of the attribute> must be an integer.".format(str(self.height)))
 		'''a setter method for the height'''
 		self.__height = value
 	
@@ -54,6 +60,9 @@ class Rectangle(Base):
 	@x.setter
 	def x(self, value):
 		'''setter  method for the x attribute'''
+		if type(value) != int:
+			"""validation of all setter methods and instantiation"""
+			raise TypeError("{} of the attribute> must be an integer.".format(str(self.x)))
 		self.__x = value
 
 	@property
@@ -63,4 +72,11 @@ class Rectangle(Base):
 	@y.setter
 	def y(self, value):
 		'''a setter method for y attribute'''
+		if type(value) != int:
+			"""validation of all setter methods and instantiation"""
+			raise TypeError("{} of the attribute> must be an integer.".format(str(self.y)))
 		self.__y = value
+	
+	'''If the input is not an integer, raise the TypeError exception with the message: <name of the attribute> must be an integer. Example: width must be an integer
+If width or height is under or equals 0, raise the ValueError exception with the message: <name of the attribute> must be > 0. Example: width must be > 0
+If x or y is under 0, raise the ValueError exception with the message: <name of the attribute> must be >= 0. Example: x must be >= 0'''
