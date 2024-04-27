@@ -24,31 +24,39 @@ class Rectangle(Base):
 
 	@property
 	def width(self):
+		'''a getter method for the width'''
 		return self.__width
 	
 	@width.setter
 	def width(self, value):
+		'''a setter method for the width'''
 		self.__width = value
+
 	@property
 	def height(self):
+		'''a getter method for the height'''
 		return self.__height
 	
 	@height.setter
 	def height(self, value):
+		'''a setter method for the height'''
 		self.__height = value
 	
 	@property
 	def x(self):
+		'''a getter method for x'''
 		return self.__x
 	
 	@x.setter
 	def x(self, value):
-		'''setter for the x attribute'''
+		'''setter  method for the x attribute'''
 		self.__x = value
 
 	@property
 	def y(self):
+		'''a getter method for y attribute'''
 		return self.__y
 	@y.setter
 	def y(self, value):
+		'''a setter method for y attribute'''
 		self.__y = value
