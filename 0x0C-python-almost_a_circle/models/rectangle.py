@@ -2,7 +2,7 @@
 
 '''importing a module from models called base with a class of Base'''
 
-from models.base import Base
+from base import Base
 
 """A class called Rectangle that inherits from the Base class"""
 
@@ -33,11 +33,15 @@ class Rectangle(Base):
 	
 	@width.setter
 	def width(self, value):
+		'''a setter method for the width'''
 		if type(value) != int:
 			"""validation of all setter methods and instantiation"""
-			raise TypeError("{} of the attribute> must be an integer.".format(str(self.width)))
-		'''a setter method for the width'''
-		self.__width = value
+			raise TypeError("width must be an integer.")
+		elif self.__width <= 0:
+			'''checkng If width or height is under or equals 0'''
+			raise ValueError("width must be > 0.")
+		else:
+			self.__width = value
 
 	@property
 	def height(self):
@@ -46,11 +50,15 @@ class Rectangle(Base):
 	
 	@height.setter
 	def height(self, value):
+		'''a setter method for the height'''
 		if type(value) != int:
 			"""validation of all setter methods and instantiation"""
-			raise TypeError("{} of the attribute> must be an integer.".format(str(self.height)))
-		'''a setter method for the height'''
-		self.__height = value
+			raise TypeError("height must be an integer.")
+		elif self.__height <= 0:
+			'''checkng If width or height is under or equals 0'''
+			raise ValueError("height must be > 0.")
+		else:
+			self.__height = value
 	
 	@property
 	def x(self):
@@ -62,8 +70,12 @@ class Rectangle(Base):
 		'''setter  method for the x attribute'''
 		if type(value) != int:
 			"""validation of all setter methods and instantiation"""
-			raise TypeError("{} of the attribute> must be an integer.".format(str(self.x)))
-		self.__x = value
+			raise TypeError("x  must be an integer.")
+		elif self.__x <= 0:
+			'''checkng If width or height is under or equals 0'''
+			raise ValueError("x must be > 0.")
+		else:
+			self.__x = value
 
 	@property
 	def y(self):
@@ -74,9 +86,10 @@ class Rectangle(Base):
 		'''a setter method for y attribute'''
 		if type(value) != int:
 			"""validation of all setter methods and instantiation"""
-			raise TypeError("{} of the attribute> must be an integer.".format(str(self.y)))
-		self.__y = value
+			raise TypeError("y  must be an integer.")
+		elif self.__y <= 0:
+			'''checkng If width or height is under or equals 0'''
+			raise ValueError("y must be > 0.")
+		else:
+			self.__y = value
 	
-	'''If the input is not an integer, raise the TypeError exception with the message: <name of the attribute> must be an integer. Example: width must be an integer
-If width or height is under or equals 0, raise the ValueError exception with the message: <name of the attribute> must be > 0. Example: width must be > 0
-If x or y is under 0, raise the ValueError exception with the message: <name of the attribute> must be >= 0. Example: x must be >= 0'''
