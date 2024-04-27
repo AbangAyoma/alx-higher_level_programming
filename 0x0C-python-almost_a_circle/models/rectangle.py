@@ -1,4 +1,4 @@
-from base import Base
+from models.base import Base
 
 """A class called Rectangle that inherits from the Base class"""
 
