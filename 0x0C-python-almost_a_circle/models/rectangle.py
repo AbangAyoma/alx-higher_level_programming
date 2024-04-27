@@ -1,20 +1,27 @@
 from models.base import Base
+
 """A class called Rectangle that inherits from the Base class"""
+
+
 class Rectangle(Base):
 	"""the class takes private attributes"""
+
 	def __init__(self, width, height, x=0, y=0, id=None):
 		"""Instantiation of the class
 		*args: 
 		width: the width 
 		height: the height 
 		then x and y"""
+
 		self.__width = width
 		self.height = height
 		self.__x = x
 		self.__y = y
 		super().__init__(id)
+
 	'''Setting getters and setters for all attribute of the 
-    rectanlge class'''
+    	rectanlge class'''
+
 	@property
 	def width(self):
 		return self.__width
@@ -25,11 +32,11 @@ class Rectangle(Base):
     
     	@property
 	def height(self):
-		return self.__width
+		return self.__height
 	
 	@width.setter
     	def height(self, value):
-        	self.__width = value
+        	self.__height = value
 	
     	@property
     	def x(self):
