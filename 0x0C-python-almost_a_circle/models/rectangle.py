@@ -1,3 +1,5 @@
+'''importing a module from models called base with a class of Base'''
+
 from models.base import Base
 
 """A class called Rectangle that inherits from the Base class"""
@@ -14,7 +16,7 @@ class Rectangle(Base):
 		then x and y"""
 
 		self.__width = width
-		self.height = height
+		self.__height = height
 		self.__x = x
 		self.__y = y
 		super().__init__(id)
