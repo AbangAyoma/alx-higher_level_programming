@@ -1,4 +1,4 @@
-from models.base import Base
+from base import Base
 
 """A class called Rectangle that inherits from the Base class"""
 
@@ -27,30 +27,28 @@ class Rectangle(Base):
 		return self.__width
 	
 	@width.setter
-    	def width(self, value):
-        	self.__width = value
-    
-    	@property
+	def width(self, value):
+		self.__width = value
+	@property
 	def height(self):
 		return self.__height
 	
-	@width.setter
-    	def height(self, value):
-        	self.__height = value
+	@height.setter
+	def height(self, value):
+		self.__height = value
 	
-    	@property
-    	def x(self):
-        	return self.__x
-    
-    	@x.seter
-    	def x(self, value):
-        	'''setter for the x attribute'''
-        	self.__x = value
+	@property
+	def x(self):
+		return self.__x
+	
+	@x.setter
+	def x(self, value):
+		'''setter for the x attribute'''
+		self.__x = value
 
 	@property
-    	def y(self):
-        	return self.__y
-    
-    	@y.seter
-    	def y(self, value):
-        	self.__y = valueS
+	def y(self):
+		return self.__y
+	@y.setter
+	def y(self, value):
+		self.__y = value
