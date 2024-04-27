@@ -1,4 +1,3 @@
-Certainly! Below is a sample `README.md` file for your model package:
 
 ```markdown
 # Model Package

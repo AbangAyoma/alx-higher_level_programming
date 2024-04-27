@@ -1,4 +1,3 @@
-Certainly! Here's a simple README.md content specifically for your models package:
 
 ```markdown
 # Models Package
