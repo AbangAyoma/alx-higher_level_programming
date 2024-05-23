@@ -1,4 +1,4 @@
--- script to list all the tables of a database!
+-- script to list all the tables of a databases!
 
-echo "USE \$1; SHOW TABLES;"
+SHOW TABLES;
 exit
