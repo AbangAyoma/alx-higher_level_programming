@@ -1,4 +1,4 @@
 -- script to list all the tables of a database!
 
-SELECT * FROM mysql;
+echo "USE \$1; SHOW TABLES;"
 exit
