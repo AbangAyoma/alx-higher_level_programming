@@ -1,12 +1,5 @@
 #!/usr/bin/node
 
-const statementOne; 
-const statementTwo;
-const statementThree;
-statementOne = 'C is fun';
-statementTwo = 'Python is cool';
-statementThree = 'JavaScript is amazing';
-
-console.log(statementOne);
-console.log(statementTwo);
-console.log(statementThree);
+console.log('C is fun');
+console.log('Python is cool');
+console.log('JavaScript is amazing');
