@@ -6,19 +6,18 @@ import sys
 
 def list_states(username, password, db_name):
      """
-    Connects to a MySQL database and lists all states in the 'states' table.
+      Connects to a MySQL database and lists all states in the 'states' table.
 
-    Args:
+       Args:
         username (str): The username to connect to the MySQL server.
         password (str): The password to connect to the MySQL server.
         db_name (str): The name of the database to connect to.
 
-    Returns:
+      Returns:
         None 
+      """
 
-    """
-
-    try:
+     try:
         # Connect to the MySQL database
         db = MySQLdb.connect(
             host='localhost',
@@ -42,9 +41,9 @@ def list_states(username, password, db_name):
         for state in states:
             print(state)
 
-    except MySQLdb.Error as e:
+     except MySQLdb.Error as e:
         print(f"Error: {e}")
-    finally:
+     finally:
         if db:
             db.close()
 
